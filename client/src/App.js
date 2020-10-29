@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Articles from './components/articles';
 import './App.css';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import IconButton from '@material-ui/core/IconButton';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <IconButton>
+          <a href=".">
+            <AssignmentIcon fontSize="large" className="header-logo" />
+          </a>
+        </IconButton>
+        <p>Articles Api</p>
       </header>
+
+      <Articles />
     </div>
   );
 }
