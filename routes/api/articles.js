@@ -59,7 +59,7 @@ router.post(
       });
 
       article = await newArticle.save();
-      res.status(200).json(article);
+      res.status(201).json(article);
     } catch (err) {
       console.error(err);
       res.status(500).send('Server Error');
@@ -86,7 +86,7 @@ router.patch('/:id', getArticle, async (req, res) => {
     );
 
     if (updatedArticle) {
-      res.status(200).json({
+      res.status(201).json({
         success: true,
         message: `The article ${article.title} was updated`,
       });

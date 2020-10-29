@@ -2,18 +2,3 @@
   text-align: center;
 }
 
-.header-logo{
-  color: #fff;
-}
-
-.App-header {
-  background-color: #b4b4b4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #fff;
-  width: 100%;
-}
-
